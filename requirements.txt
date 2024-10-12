@@ -1,6 +1,7 @@
+python==3.12.7
 scikit-learn
 pandas
 numpy
-pickle
+pickle5
 streamlit
 seaborn
