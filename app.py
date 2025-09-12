@@ -15,6 +15,7 @@ teams = ['Delhi Capitals', 'Kolkata Knight Riders', 'Kings XI Punjab',
        'Sunrisers Hyderabad', 'Rajasthan Royals', 'Chennai Super Kings']
 
 st.title('IPL Winning Probability')
+st.text("You can predict winner after 1st inning completion.")
 
 col1 , col2 = st.columns(2)
 
@@ -25,16 +26,16 @@ with col2:
     bowling_team = st.selectbox("Select Bowling Team" , sorted(teams))
 
 city = st.selectbox("Select the City" , sorted(cities))
-target = st.number_input("Target")
+target = st.number_input(label="Target" , step=1)
 
 col3 , col4 , col5 = st.columns(3)
 
 with col3:
-    score = st.number_input("Score")
+    score = st.number_input(label="Score" , step=1)
 with col4:
-    overs  = st.number_input("Overs Completed")
+    overs  = st.number_input(label="Overs Completed" )
 with col5:
-    wickets = st.number_input("Wickets")
+    wickets = st.number_input(label="Wickets" , step=1)
 
  
 
